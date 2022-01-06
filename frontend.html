@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Library</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="frontend.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Online Library</h1>
+		</div>
+		<div class="buttons">
+		<button id="QuickAdd">+ Add</button>
+		<button id="Search" style="margin-left: 50pt;">Search</button>
+		</div>
+		<div class="quickaddForm">
+			<label for="author">Author Name</label><input type="text" id="author" class="formFields">
+			<label for="title">Book Title</label><input type="text" id="title" class="formFields">
+			<br>
+			<label for="genre">Choose genre:</label>
+            <select id="genre" id="genre" class="=formFields">
+            <option value="Science fiction">Science fiction</option>
+            <option value="Satire">Satire</option>
+            <option value="Drama">Drama</option>
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Romance">Romance</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Horror">Horror</option>
+            </select>
+
+			<br>
+			<label for="price">Price</label><input type="text" id="price" class="formFields">
+			<br><br>
+			<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+
+		</div>
+		<div class="searchBook">
+			<label for="searchKey">Search Key: </label><input type="text" id="searchKey" class="formFields"><button id="startSearch">Search</button>
+			<br>
+			<textarea id=results readonly = true;></textarea>
+			<br>
+			<button id="Done">Done</button>
+		</div>
+	</div>
+</body>
+</html>
